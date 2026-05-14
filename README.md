@@ -43,4 +43,4 @@ Dropped the row_num helper column after duplicate removal was complete
 
 -- Related Project\
 This cleaned dataset was then used for Exploratory Data Analysis (EDA) to uncover layoff trends across industries and time periods.\
-View the EDA project : SQL-exploratory-data-analysis
+View the EDA project : Global-Layoffs-EDA-SQL
