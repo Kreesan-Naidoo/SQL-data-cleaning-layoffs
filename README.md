@@ -1,19 +1,19 @@
-SQL Data Cleaning - Global layoffs (2020 -2023)
+# SQL Data Cleaning - Global layoffs (2020 -2023)
 
-Project Overview
+--Project Overview\
 This project demonstrates end-to-end data cleaning using MySQL on a real-world dataset tracking company layoffs globally between 2020 and 2023. The goal was to transform a messy, raw dataset into a clean, analysis-ready table by systematically identifying and resolving data quality issues.
 
 -- Tools Used
 
-MySQL — data cleaning and transformation
+MySQL — data cleaning and transformation\
 SQL techniques — CTEs, Window Functions, ROW_NUMBER(), JOINs, STR_TO_DATE(), ALTER TABLE
 
 
 -- Dataset
 
-Source: Kaggle — Layoffs Dataset
-Records: Global company layoffs across multiple industries and countries
-Period covered: 2020 – 2023
+Source: Kaggle — Layoffs Dataset\
+Records: Global company layoffs across multiple industries and countries\
+Period covered: 2020 – 2023\
 Key fields: Company, Location, Industry, Total Laid Off, Percentage Laid Off, Date, Stage, Country, Funds Raised
 
 
@@ -41,6 +41,6 @@ Deleted rows where both total_laid_off and percentage_laid_off were NULL, as the
 Dropped the row_num helper column after duplicate removal was complete
 
 
--- Related Project
-This cleaned dataset was then used for Exploratory Data Analysis (EDA) to uncover layoff trends across industries and time periods.
-View the EDA project on Global layoffs (2020 - 2023)
+-- Related Project\
+This cleaned dataset was then used for Exploratory Data Analysis (EDA) to uncover layoff trends across industries and time periods.\
+View the EDA project : SQL-exploratory-data-analysis
