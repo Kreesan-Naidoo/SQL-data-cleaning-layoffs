@@ -44,4 +44,4 @@ Dropped the row_num helper column after duplicate removal was complete
 
 -- Related Project
 This cleaned dataset was then used for Exploratory Data Analysis (EDA) to uncover layoff trends across industries and time periods.
-👉 View the EDA project
+View the EDA project on Global layoffs (2020 - 2023)
