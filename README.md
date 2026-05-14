@@ -23,15 +23,7 @@ Key fields: Company, Location, Industry, Total Laid Off, Percentage Laid Off, Da
 A staging table (layoffs_staging) was created as a copy of the raw data to preserve the original dataset and allow safe manipulation throughout the cleaning process.
 2. Removed Duplicate Records
 Used ROW_NUMBER() with PARTITION BY across all relevant columns to identify and remove exact duplicate rows. Since there were no primary keys in the raw data, this window function approach was required to flag duplicates before deletion.
-sqlWITH duplicate_cte AS (
-  SELECT *,
-    ROW_NUMBER() OVER(
-      PARTITION BY company, location, industry, total_laid_off,
-      percentage_laid_off, date, stage, country, funds_raised_millions
-    ) AS row_num
-  FROM layoffs_staging
-)
-SELECT * FROM duplicate_cte WHERE row_num > 1;
+
 3. Standardised Data
 
 Trimmed leading/trailing whitespace from the company column using TRIM()
