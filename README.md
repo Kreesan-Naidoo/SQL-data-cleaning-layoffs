@@ -2,7 +2,6 @@ SQL Data Cleaning - Global layoffs (2020 -2023)
 
 Project Overview
 This project demonstrates end-to-end data cleaning using MySQL on a real-world dataset tracking company layoffs globally between 2020 and 2023. The goal was to transform a messy, raw dataset into a clean, analysis-ready table by systematically identifying and resolving data quality issues.
-This project reflects the kind of data preparation work that analysts perform daily before any reporting or visualisation can take place.
 
 -- Tools Used
 
